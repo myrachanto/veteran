@@ -1,0 +1,328 @@
+
+.container {
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(151, 147, 147);
+}
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+}
+.log{
+    color: #ccbca3;
+}
+.header{
+    text-align: center;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+border-bottom: 3px solid red;
+}
+.section1{
+background-color: #f2f2f2;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 30px;
+padding-bottom: 20px;
+}
+.showcase{
+    margin-top: -30px;
+    background: url("../images/army.jpg") no-repeat 0 -400px;
+    min-height: 400px;
+    object-fit: contain;
+    text-align: center;
+    color: white;
+}
+.showcase h1 {
+    padding-top: 50px;
+    font-size: 40px;
+}
+.showcase p {
+    font-size: 20px;
+}
+/* .flexa{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+} */
+.gridder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+.card{
+        box-shadow: 3px 3px 0px 0px rgb(186, 181, 181);
+        border-radius: 10%;
+        margin-top: 10px;
+}
+.card .imager {
+    height: 200px;
+    max-width: 300px;
+    object-fit: fill;
+    object-fit: contain;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+.card .info{
+    text-align: center;
+}
+.backgroundinfo{
+    text-align: center;
+    background-color: #88785E;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.sect {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.sectimager {
+    min-height: 300px;
+    object-fit: contain;
+    border-radius: 8%;
+}
+.information {
+    grid-column: 2 / 4;
+}
+.sect2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.sector{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sect2 .information {
+    grid-column: 1 / 3;
+}
+.btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20%;
+    margin: 10px 10px;
+    background: #88785E;
+    color: white;
+    cursor: pointer;
+}
+.mobi{
+    display: none;
+}
+.lap{
+    display: flex;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .form{
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .form-control{
+    padding: 10px 10px;
+  }
+  .input{
+    width: 100%;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+@media screen and (max-width:  450px) {
+
+    /* Styles go here */
+
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+
+.mobi{
+    display: block;
+    color: white;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.lap{
+    display: none;
+}
+.sect {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.information {
+    grid-column: 1;
+}
+
+.card{
+    box-shadow: 3px 3px 2px 2px rgb(186, 181, 181);
+    border-radius: 10%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sectimager {
+    min-height: 200px;
+    object-fit: contain;
+    border-radius: 8%;
+}
+.sect2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.sect2 .information {
+    grid-column: 1;
+}
+.mobileview{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+}
+@media screen and (max-width: 1000px) {
+
+    /* Styles go here */
+
+.sect {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.information {
+    grid-column: 1;
+}
+
+.sectimager {
+    object-fit: contain;
+    border-radius: 8%;
+    max-width: 700px;
+}
+.sect2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.sect2 .information {
+    grid-column: 1;
+}
+.mobileview{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+}
